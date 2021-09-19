@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt=BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <style> 
+        h1 {
+            background-color: red;
+        }
+        
+        p {
+            background-color: blue;
+        }
+
+        #heading-dois {
+            background-color: blueviolet;
+        }
+
+        .fundo-verde {
+            background-color: red;
+        }
+    </style>
+    <!-- As class e id servem para selecionar para estilizarmos a página html no css-->
+    <!-- Para selecionaros id, usamos a # antes do nome. Para selecionarmos a classe, usamos o . antes do nome da classe-->
+    <!-- Os id tem prioridade em relação às classes, então mesmo que sobrescrevamos a classe, como o id está mais acima hierarquia, como no caso acima, ele permanecerá-->
+</head>
+<body>
+    <h1 id="heading-um" class="fundo-verde">Título Principal</h1> <!-- A separação com - nas divs e/ou elementos de html é por convenção-->
+    <h1 id="heading-dois" class="fundo-verde borda-esquerda">Titulo Principal 2</h1> <!-- Um id não pode ter o mesmo nome que outro id-->
+    <!-- Já as classes podem sim se repetir em nome e também ter mais de uma classe -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam minus debitis corporis exercitationem sequi fugit, quia officiis nesciunt?</p>
+</body>
+</html>

@@ -1,0 +1,47 @@
+ul li::after { /*Adicionando elementos depois sempre com os dois pontos :: diferentemente das pseudo-classes onde usamos apenas 1 dois pontos : */ 
+    content: '-';
+    background-color: red;
+    color: white;
+    display: block;
+}
+
+ul li::before { /*Adicionando elementos antes */ 
+    content: '--';
+    background-color: yellow;
+    color: black;
+    display: inline;
+}
+p {
+    font-size: 15px;
+}
+p::first-letter {
+    font-size: 40px;
+    display: block;
+    float: left;
+    margin: 0 5px 5px 0;
+}
+
+p::first-line {
+    background-color: blueviolet;
+}
+
+p::selection {
+    background-color: black;
+    color: white;
+}
+
+::placeholder {
+    background-color: turquoise;
+}
+
+/*
+    Especificidade no CSS: Hierarquia de importancia para a aplicação de CSS:
+    ID
+    Classes
+    Atributos
+    Pseudo-Classes
+    Elementos
+    Pseudo-Elementos
+    Ou a última linha de CSS
+    Ou aplicando !important que daí é a regra mais forte.
+*/

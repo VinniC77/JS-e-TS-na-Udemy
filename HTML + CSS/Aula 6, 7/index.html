@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Título da Página</title>
+    <style>
+        .img-in-text{
+            width: 140px;
+            height: 70px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cabeçalho</h1>
+    <nav>
+        <ul>
+            <li>Menu</li>
+            <li>Contato</li>
+            <li>Sobre</li>
+            <li>Mapa do Site</li>
+        </ul>
+    </nav>
+    <nav>
+        <ol>
+            <li>Menu</li>
+            <li>Contato</li>
+            <li>Sobre</li>
+            <li>Mapa do Site</li>
+        </ol>
+    </nav>
+    <p>Lorem ipsum <b>dolor</b> sit amet, consectetur <strong>elit</strong>. Mollitia, quod nihil? Reiciendis culpa perspiciatis <i>praesentium</i> veritatis, eligendi <em>tenetur</em> deserunt possimus eos quasi explicabo quis pariatur, ration <a href="https://www.nike.com/" target="_blank"><img class="img-in-text"src="https://mega.ibxk.com.br///2013/7/megacurioso/super-imagem/superimagem-megacurioso-333314991004014532.jpg?ims=1200x480" alt="logo da marca Nike"></a>cumque!</p>
+    <hr> <!-- Serve para traçar uma linha-->
+    <!--A diferença entre b(bold) e strong é que a tag strong é semantica e está mais de acordo com o html moderno.-->
+    <!--A mesma coisa acontece com "i" e "em". EM significa emphasys e traz um sentido para enfatizar algo. Também é uma tag que faz mais sentido em se usar com o html moderno.-->
+    <!--A tag a serve para colocarmos links na página, seja de arquivos internos ou de sites. Dentre os atributos o target serve para dizer se o link deve abrir em outra página, aba ou no mesmo site, por exemplo-->
+    <!--A tag img serve para colocarmos imagens de arquivo ou de fora tabmbém, e o atributo alt serve para descrevermos para o algoritmo o que aquela imagem representa.-->
+        <!--Nesse exemplo coloquei o link para o site da nike na própria imagem do logo.-->
+    <p>Lorem <small>dolor</small> sit amet 3<sup>2</sup> adipisicing elit.<br>Atque H<sub>2</sub>0 xodit rerum, dolore quisquam quos <q cite="index.html">accusamus officiis, aperiam sint labore <code>console.log</code> nemo doloribus</q> cumque mollitia consequuntur sapiente dicta? Asperiores reiciendis corrupti iusto.</p>
+    <!--q de quote ou quotation, ele coloca entre aspas e serve para aplicar em citações de outros sites ou fontes. Todas essas tags são usadas dentro do p.-->
+    <blockquote>Aqui serve para fazermos uma citação em bloco. Podemos usar a tag p aqui, mas não o blockquote em p.</blockquote>
+    <pre>
+        <code>
+            let soma = 0;
+            function mais(a, b) {
+                return a + b
+            }
+            console.log(mais(1, 2));
+        </code>
+    </pre>
+    <!-- Para inserirmos códgio no texto em html precisamos utilizar a tag pre para respeitar os espaços e indentações e a tag code para usar a fonte correta (monospace)-->
+    <!-- As tags span e div são conteiners genéricos. O Span é inline (só utiliza os eu próprio tamanho) e a div é em block (utliza toda a linha e a linha é só dela, mesmo sendo colocada dentro de um parágrafo)-->
+</body>
+</html>

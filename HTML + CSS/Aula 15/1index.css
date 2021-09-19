@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pai h1+p { /* Dessa forma, só o primeiro irmao "p" irá pegar a cor vermelha.*/
+    color: red;
+}
+
+.pai p+h1 { /* Para selecionar todos depois de um elemento, seja tag, id ou classe, baste mudar o "+" pelo "~"*/
+    color: blue;
+}
+
+/* Pseudo-classes*/
+
+.heading:hover { /* Quando passa o cursor em cima. */
+    background-color: red;
+}
+
+.heading {
+    transition: all 1s ease-in-out;
+}
+
+a {
+    color: darkorange;
+}
+
+a:link { /* Cor de link nunca visitado. */
+    color: deeppink;
+}
+
+a:visited { /* Cor do link já visitado. */
+    color:firebrick
+}
+
+a:hover {
+    background-color: darkslateblue;
+    color: white;
+    text-decoration: none;
+}
+
+a:active { /* Quando clico (e seguro) */
+    background-color: red;
+    color: white;
+    text-decoration: none;
+}
+
+input:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+    outline: none;
+    border: 1px solid black;
+}
+
+input:disabled {
+    background-color: green;
+    cursor: not-allowed;
+}
+
+input:checked + p{ /* Usando o conceito de siblings irmaos. Significa que quando marcarmos o input, o p receberá essa configuração.  */
+    background-color: blueviolet; /* Só o p adjacente pega a configuração pelo seletor + */
+}
+
+.pai .lista li:last-child {
+    background-color: chartreuse;
+}
+
+input:required {
+    background-color: blue;
+}
+
+p:not(.meio) {
+    color: green;
+}
+
+.nth li:nth-child(even) { /* Seleciona só os indices pares*/
+    background-color: hotpink;
+}
+
+.nth li:nth-child(odd) { /* Seleciona só os indices impares*/
+    background-color: lightskyblue
+}
+
+.nth li:nth-child(3n) { /* Seleciona de 3 em 3*/
+    background-color: darkorange
+}

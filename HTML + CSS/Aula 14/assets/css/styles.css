@@ -1,0 +1,33 @@
+* { /* Seletor geral. Pega tudo o que tem na página.*/
+    margin: 0;
+    padding: 0;
+}
+
+p, h1 {
+    color: red;
+}
+
+body div section p,
+body div section h1 { /* Seleção de dependentes, onde o último é o verdadeiro selecionado. Para selecionar mais de um elemento (seja tag, id ou classe), basta incluir a vírgula e colocar o caminho.*/
+    color: aqua;
+}
+
+.heading {
+    color: green;
+}
+
+.main-content h2 {
+    font-style: italic;
+}
+
+.main-content .paragrafo {
+    font-style: italic;
+}
+
+.pai { /* Se eplicarmos algo num elemento pai, o elemeto "filho" irá herdar essa característica, assim como na POO.*/
+    color: red;
+}
+
+.pai .filha { /* Seletor descendente*/
+    color: blue;
+}

@@ -1,0 +1,35 @@
+html {
+    font-size: 62.5%; /* Usa-se essa porcentagem, pois, ao calculcar o rem vezes o 0.625 o tamanho da fonte fica em 10px*/
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Assim todo o conteúdo da página fica relativo, indepedente da tela(dispositivo) em que o usuário abrir a página.*/
+
+.pai {
+    width: 30rem; /* Se quisermos aplicar um tamanho de 300px para esse p, 30rem representa 300px*/
+    height: 30rem;
+    background-color: yellow;
+}
+
+p {
+    font-size: 1em; /* Neste caso a fonte será de 50px, pois, as fontes em 'em' estão baseadas no tamanho do elemento pai. */
+}
+
+.eu {
+    width: 100vw; /* A unidade de medidda de viewport representa o 100 da área visivel. No caso de 50vw de largura, a classe eu irá ocupar metada da área visível.*/
+    height: 100vh;
+    background-color: blue;
+}
+
+.color-one {
+    background-color: aqua;
+}
+
+.color-two {
+    background-color: violet;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: sans-serif;
+        }
+        label {
+            cursor: pointer;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form action="#" method="GET" target="_blank" autocomplete="off">
+        <p>O formulário</p>
+        <p>
+            <label for="nome">Nome:</label>
+            <input type="text" name="nome" id="nome" placeholder="Seu nome" required>
+        <p>
+        <p>
+            <label for="dev1">Sou um dev</label>
+            <input type="checkbox"id="dev1" value="sim">
+        <p>
+        <p>
+            <label for="dev2">Sou um dev</label>
+            <input type="checkbox"id="dev2" value="sim">
+        <p>
+        <p>
+            <label for="dev3">Sou um dev</label>
+            <input type="checkbox"id="dev3" value="sim">
+        <p>
+        <p>
+            Gênero: <br/>
+            <label for="feminino">Feminino</label>
+            <input type="radio"id="feminino" name="genero" value="feminino">
+
+            <label for="masculino">Masculino</label>
+            <input type="radio"id="masculino" name="genero" value="masculino">
+
+            <label for="outro_outra">Outro ou Outra</label>
+            <input type="radio"id="outro_outra" name="genero" value="outro_outra">
+            <!-- A diferença com o raio é que quando marcamos um, desmarcamos outro. Só um dos radios pode ser marcado.-->
+        <p>
+            <label for="date">Data:</label>
+            <input type="date" name="data" id="data" value="2020-05-27">
+        <p>
+        <p>
+            <label for="datetime">Data e Hora:</label>
+            <input type="datetime-local" name="datetime" id="datetime" value="2020-05-27T20:00">
+        <p>
+        <p>
+            <label for="time">Hora:</label>
+            <input type="time" name="time" id="time" value="20:03:07">
+        <p>
+        <p>
+            <label for="cor">Cor prefetida:</label>
+            <input type="color" name="cor" id="cor" value="#ff0000">
+        <p>
+        <p>
+            <label for="email">Seu e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="ex.: email@email.com">
+        <p>
+        <p>
+            <label for="foto">Sua foto:</label>
+            <input type="file" name="foto" id="foto" accept=".png, .jpeg, image/*">
+        <p>
+        <p>
+            <label for="number">Seu número preferido:</label>
+            <input type="number" name="nunmber" id="number" placeholder="Digite um número" min="1" max="99">
+        <p>
+        <p>
+            <label for="password">Sua senha:</label>
+            <input type="password" name="password" id="password" placeholder="Digite sua senha">
+        <p>
+        <p>
+            <label for="range">Range:</label>
+            <input type="range" name="range" id="range" min="0" max="10">
+        <p>
+        <p>
+            <label for="url">Sua url:</label>
+            <input type="url" name="url" id="url" placeholder="URL">
+        <p>
+        <p>
+            <label for="search">Sua pesquisa:</label>
+            <input type="search" name="search" id="search" placeholder="Digite o que quer pesquisar">
+        <p>
+        <p>
+            <label for="select">Seleciona uma opção:</label>
+            <select name="select" id="select">
+                <option value="qualquer 1" label="Label 1">
+                <option value="qualquer 2" label="Label 2" disabled>
+                <option value="qualquer 3" label="Label 3" selected>
+                <option value="qualquer 4" label="Label 4">
+            </select>
+        </p>
+        <p>
+            <label for="textarea">Textarea:</label>
+            <textarea name="textarea" id="textarea" cols="30" rows="5"></textarea>
+        <p>
+        <p>
+            <button type="reset">Resetar</button>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.pai {
+    height: 300vh;
+}
+
+.filha1, .filha2, .filha3 {
+    width: 300px;
+    height: 300px;
+    background-color: red;
+    margin: 10px;
+    position: static;
+}
+
+.filha2 {
+    background-color: yellowgreen;
+    /* position: absolute;
+    z-index: -1; z-index representa a camada. No caso, a caixa ficará atrás do texto. Estando com a position em absolute. */
+    position: fixed; /* Acompanha o rolamento da página, ficando fixado onde posicionarmos. */
+    top: 30%;
+    right: 0;
+}
+
+.filha1 {
+    /* position: absolute;
+    top: 50%;
+    margin-top: -150px;
+    left: 50%;
+    margin-left: -150px;
+    z-index: 2;
+    Isso é pra posicionar no meio da página. */
+    font-size: 10px;
+}
+
+.filha3 {
+    background-color: blue;
+    position: relative;
+    top: 100px;
+    left: 100px;
+}
+
+.outra {
+    font-size: 50px;
+    background-color: white;
+    position: absolute; /* Nesse caso irá se comportar de forma absoluta, mas respeitando (dentro) da div pai. */
+    top: 50px;
+    left: 50px;
+}
+
+ul {
+    height: 100px;
+    overflow-y: auto;
+}
+
+ul li.sticky {
+    position: sticky;
+    background-color: green;
+    top: 0;
+}

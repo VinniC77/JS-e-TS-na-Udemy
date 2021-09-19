@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        nav {
+            background: red;
+            list-style: none;
+            display: flex;
+            align-items: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 10px 20px;
+            display: block;
+            text-transform: uppercase;
+        }
+        nav a:hover {
+            background: rgba(0,0,0,0.3);
+        }
+        nav ul {
+            display: flex;
+            list-style: none;
+            background: red;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <aside>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Products</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <ul> <!-- Lista NÃO ordenada (Unordered List)-->
+        <li>Item 1</li> <!--Item da lista (List Item)-->
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ul>
+
+    <ol type="1" start="21"> <!-- Lista ORDENADA (Ordered List)-->
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+    </ol>
+
+    <dl> <!-- Definição da Lista (Description List)-->
+        <dt>Coffee</dt> <!--Descrição do termo (Description Term)-->
+        <dd>Black Hot Drink</dd> <!-- Definição do Termo (Discribes Description) -->
+    </dl>
+</body>
+</html>

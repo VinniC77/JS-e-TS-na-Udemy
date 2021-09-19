@@ -1,0 +1,11 @@
+p {
+    font-size: 30px;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 3px;
+    word-spacing: 15px;
+    line-height: 35px;
+    /* text-decoration: line-through; */
+    text-shadow: 2px 2px 4px red; /* os 2 primeiros é a direção e o 3 é a sombra, no caso. */
+    text-transform: capitalize; /* Todas as palavras com a primeira letra maiuscula. */
+}
