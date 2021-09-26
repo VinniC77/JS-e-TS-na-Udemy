@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios com Strings</title>
+</head>
+<body>
+    <script>
+        const nome = prompt('Digite seu nome completo:');
+        let comprimento = nome.length;
+        let segunda = nome[1];
+        let primeiroIndiceI = nome.indexOf('i');
+        let ultimoIndiceI = nome.lastIndexOf('i');
+        let tresUltimas = nome.slice(-3);
+        let palavras = nome.split(' ');
+        let maiuscula = nome.toUpperCase();
+        let minúscula = nome.toLocaleLowerCase();
+        
+        document.body.innerHTML += `Seu nome é <strong>${nome}</strong> <br/>`;
+        document.body.innerHTML += `Seu nome tem ${comprimento} letras <br/>`;
+        document.body.innerHTML += `A segunda letra do seu nome é ${segunda} <br/>`;
+        document.body.innerHTML += `Qual é o primeiro índice da letra 'i' no seu nome? ${primeiroIndiceI} <br/>`;
+        document.body.innerHTML += `Qual é o último índice da letra 'i' no seu nome? ${ultimoIndiceI} <br/>`;
+        document.body.innerHTML += `As últimas 3 letras do seu nome são: ${tresUltimas} <br/>`;
+        document.body.innerHTML += `As palavras do seu nome são: ${palavras} <br/>`;
+        document.body.innerHTML += `Seu nome com letras maiúsculas fica assim ${maiuscula} <br/>`;
+        document.body.innerHTML += `Seu nome com letras minúsculas fica assim ${minúscula} <br/>`;
+
+        // Na resolução do exercício, o professor não criou variáveis e utilizou os métodos no próprio texto, conforme o exemplo abaixo:
+
+        document.body.innerHTML += `Seu nome tem ${nome.length} letras <br/>`;
+    </script>
+</body>
+</html>
