@@ -1,0 +1,13 @@
+body {
+    background: rgb(68, 94, 240);
+}
+
+.container {
+    background: white;
+    color: black;
+    font-family: sans-serif;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
