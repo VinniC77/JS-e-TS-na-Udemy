@@ -1,7 +1,7 @@
 // setInterval serve para trabalharmos com intervalo de tempo.
 // Serve para determinarmos que uma função seja executada em um espaço de tempo pré-definido.
 
-function mostraHora() { // Função que mostr a hora atual em formato pt-BR e de 24h.
+function mostraHora() { // Função que mostra a hora atual em formato pt-BR e de 24h.
     let data = new Date();
     return data.toLocaleTimeString('pt-BR', {
         hour12: false
