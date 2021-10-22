@@ -11,12 +11,15 @@
 
 <body>
     <section class="container">
-        <h1>Lista de Tarefas</h1>
-        <p>
-            <input type="text" class="input-tarefa">
-            <button class="btn-tarefa">Adicionar Tarefa</button>
-        </p>
-        <ul class="tarefas"></ul>
+        <h1>Calcule seu IMC</h1>
+        <form action="/" id="formulario" method="GET">
+            <label for="peso">Peso</label>
+            <input type="text" id="peso" name="peso">
+            <label for="altura">Altura</label>
+            <input type="text" id="altura" name="altura">
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="resultado"></div>
     </section>
     <script src="assets/js/main.js"></script>
 </body>
