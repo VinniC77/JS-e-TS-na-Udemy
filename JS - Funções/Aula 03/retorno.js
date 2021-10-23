@@ -1,0 +1,50 @@
+// Return sempre retorna um valor (o que faz com que possamos guardar esse valor em uma variável) e sempre termina a função.
+function soma(a, b) {
+    return a + b; // Aqui retorna um valor.
+}
+let primeira = soma(5, 2);
+console.log(primeira);
+
+function somma2(a, b) {
+    console.log(a + b) // Aqui simplesmente mostra um valor no console.
+}
+
+// Função dentro de função
+function falaFrase(comeco) {
+    function falaResto(resto) {
+        return comeco + ' ' + resto;
+    }
+    return falaResto;
+}
+
+const fala = falaFrase('Olá');
+const resto = fala('mundo');
+
+console.log(resto);
+
+// Função que duplica um valor
+
+// function duplica(n) {
+//     return n * 2;
+// }
+// function triplica(n) {
+//     return n * 3;
+// }
+// function quadriplica(n) {
+//     return n * 4;
+// }
+// Podemos transformar tudo isso eum uma só função.
+
+function criaMultiplicador(multiplicador) {
+    return function(n) {
+        return n * multiplicador;
+    }
+}
+
+const duplica = criaMultiplicador(2);
+const triplica = criaMultiplicador(3);
+const quadriplica = criaMultiplicador(4);
+
+console.log(duplica(2));
+console.log(triplica(2));
+console.log(quadriplica(2));
