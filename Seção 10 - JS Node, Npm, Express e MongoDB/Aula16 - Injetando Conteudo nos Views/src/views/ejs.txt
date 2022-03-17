@@ -1,0 +1,13 @@
+<% Controle de fluxo (if, for...) %>
+<%= Mostrando o código (as tags) que foi digitado %>
+<%- Executa o código que foi digitado %>
+<%# Comentário %>
+<%- include('CAMINHO/ARQUIVO') %>
+
+Exemplo de como digitar um if em .ejs:
+
+<% if (algumaCoisa) { %>
+    <%= exibe alguma coisa %>
+<% } elese { %>
+    <%= exibe outra coisa %>
+<% } %>

@@ -1,0 +1,24 @@
+<%- include('includes/head'); %> 
+
+    <section class="container">
+        <h1>
+            <%= titulo %><br/> <!-- O sinal de = exibe a tag HTML que foi digiada -->
+            <%- titulo %>      <!-- O sinal de - executa a a tag HTML que foi digitada -->
+            <%# if(titulo !== 'undefined') { %> <!--- if e else no ejs -->
+                <%# titulo %> 
+            <%# } else { %> 
+               <!-- O titulo não foi enviado. -->
+            <%# } %>
+            <%# numeros.forEach(num => { %> <!-- for no ejs -->
+                <%#= num %><br>
+            <%# }); %> 
+
+        </h1>
+        <form action="/" class="post">
+            <label>Cliente</label>
+            <input type="text" name="cliente">
+            <button>Submit</button>
+        </form>
+    </section>
+
+    <%- include('includes/footer'); %> 
