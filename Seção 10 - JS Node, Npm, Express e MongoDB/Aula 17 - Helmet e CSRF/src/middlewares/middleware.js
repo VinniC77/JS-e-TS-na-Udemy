@@ -7,7 +7,7 @@ exports.outroMiddleware = (req, res, next) => {
     next();
 }
 
-exports.checkCsrfError = (err, req, res) => {
+exports.checkCsrfError = (err, req, res, next) => {
     if(err && err.code === 'EBADCSRFTOEKN') { // Tratando o erro quando não tiver token na página.
         return res.render('404');
     }
